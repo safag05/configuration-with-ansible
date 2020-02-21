@@ -96,34 +96,34 @@
       tags: [ mysql ]
 
       - name: Create MySQL user for WordPress
-      mysql_user:
-        name: "{{ Ben }}"
-        password: "{{ 52Z86P@&$64vFkPG6Z674yAA8 }}"
-        priv: "{{ mysql_db }}.*:ALL"
-        state: present
-        login_user: root
-        login_password: "{{ 52Z86P@&$64vFkPG6Z674yAA8 }}"
-      tags: [ mysql ]
+        mysql_user:
+          name: "{{ Ben }}"
+          password: "{{ 52Z86P@&$64vFkPG6Z674yAA8 }}"
+          priv: "{{ mysql_db }}.*:ALL"
+          state: present
+          login_user: root
+          login_password: "{{ 52Z86P@&$64vFkPG6Z674yAA8 }}"
+        tags: [ mysql ]
 
       - name: Create MySQL user for WordPress
-      mysql_user:
-        name: "{{ Lisa }}"
-        password: "{{ 52Z86P@&$64vFkPG6Z674yAA8 }}"
-        priv: "{{ mysql_db }}.*:ALL"
-        state: present
-        login_user: root
-        login_password: "{{ 52Z86P@&$64vFkPG6Z674yAA8 }}"
-      tags: [ mysql ]
+        mysql_user:
+          name: "{{ Lisa }}"
+          password: "{{ 52Z86P@&$64vFkPG6Z674yAA8 }}"
+          priv: "{{ mysql_db }}.*:ALL"
+          state: present
+          login_user: root
+          login_password: "{{ 52Z86P@&$64vFkPG6Z674yAA8 }}"
+        tags: [ mysql ]
 
       - name: Create MySQL user for WordPress
-      mysql_user:
-        name: "{{ Katty }}"
-        password: "{{ 52Z86P@&$64vFkPG6Z674yAA8 }}"
-        priv: "{{ mysql_db }}.*:ALL"
-        state: present
-        login_user: root
-        login_password: "{{ 52Z86P@&$64vFkPG6Z674yAA8 }}"
-      tags: [ mysql ]
+        mysql_user:
+          name: "{{ Katty }}"
+          password: "{{ 52Z86P@&$64vFkPG6Z674yAA8 }}"
+          priv: "{{ mysql_db }}.*:ALL"
+          state: present
+          login_user: root
+          login_password: "{{ 52Z86P@&$64vFkPG6Z674yAA8 }}"
+        tags: [ mysql ]
 
   # UFW Configuration
     - name: "UFW - Allow HTTP on port {{ 80 }}"
