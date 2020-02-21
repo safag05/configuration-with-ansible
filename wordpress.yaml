@@ -1,6 +1,6 @@
 ---
 - name: Wordpress
-  hosts: localhost
+  hosts: 34.214.130.87
   become: true
   become_method: sudo
   connection: ssh
