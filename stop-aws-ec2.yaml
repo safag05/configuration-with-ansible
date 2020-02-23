@@ -5,7 +5,6 @@
   become_method: sudo
   connection: ssh
   ignore_errors: false
-  remote_user: centos
   tasks:
   - name: Gather facts
     action: ec2_facts
