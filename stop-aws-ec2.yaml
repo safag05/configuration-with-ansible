@@ -1,14 +1,12 @@
 ---
 - name: Stop EC2 instances
   hosts: all
-  become: true
-  become_method: sudo
-  ignore_errors: false
+  remote_user: ubuntu
   tasks:
   - name: Gather facts
     action: ec2_facts
 
-  - name: Stop myserver instance
+  - name: Stop all instance
     local_action:
         module: ec2
         region: "all"
