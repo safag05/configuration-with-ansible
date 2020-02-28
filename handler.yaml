@@ -16,10 +16,15 @@
       package:
         name: mariadb-server
         state: present
-        
+      notify: MYSQL RESTART
+
   handlers:
     - name: HTTPD RESTART
       systemd:
         name: httpd
+        state: restarted
+    - name: MYSQL RESTART
+      systemd:
+        name: mysql
         state: restarted
     
