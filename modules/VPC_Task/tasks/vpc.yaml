@@ -3,7 +3,7 @@
   hosts: localhost
   gather_facts: no
   vars_files:
-    - configurations/vars
+    - vars/configurations
   tasks:
     - name: VPC for class
       ec2_vpc_net:

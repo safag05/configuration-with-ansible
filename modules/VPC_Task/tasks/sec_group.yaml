@@ -2,7 +2,7 @@
 - name: Playbook for sec groups
   hosts: localhost
   vars_files:
-    - configurations/regions
+    - vars/configurations
   gather_facts: no
   tasks:
 
